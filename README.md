@@ -6,11 +6,11 @@
 - Создание инцидента (POST ``` /api/incidents ```);  
 - Просмотр списка инцидентов (GET ``` /api/incidents ```);  
 - Редактирование инцидента (PUT ``` /api/incidents ```);  
-- Назначение категории инциденту (PATCH ``` api/incidents/{incidentId}/categories/{categoryId} ```);  
-- Назначения статуса инциденту (PATCH ``` api/incidents/{incidentId}/statuses ```);  
-- Назначение аналитика инциденту (PATCH ``` api/incidents/{incidentId}/analysts/{analystId} ```);  
-- Назначение приоритета инциденту (PATCH ``` api/incidents/priorities/{priorityId} ```);  
-- Удаление инцидента (DELETE ``` api/incidents/{incidentId} ```);  
+- Назначение категории инциденту (PATCH ``` /api/incidents/{incidentId}/categories/{categoryId} ```);  
+- Назначения статуса инциденту (PATCH ``` /api/incidents/{incidentId}/statuses ```);  
+- Назначение аналитика инциденту (PATCH ``` /api/incidents/{incidentId}/analysts/{analystId} ```);  
+- Назначение приоритета инциденту (PATCH ``` /api/incidents/priorities/{priorityId} ```);  
+- Удаление инцидента (DELETE ``` /api/incidents/{incidentId} ```);  
 
 Также реализованы базовые crud-операции по определенным эндпоинтам для связанных с инцидентами сущностей (категории, отделы, приоритеты и тп), а также операции, доступные только админу, такие как создание/удаление пользователя, создание роли, назначение пользователю роли      
 

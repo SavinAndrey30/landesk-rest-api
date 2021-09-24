@@ -27,7 +27,7 @@ Spring Boot, Spring Data JPA, Spring Security (OAUTH 2.0), JUnit, H2, ActiveMQ (
 Приложение будет доступно по адресу ``` http://localhost:8888 ```
 
 ## Тестирование работы API (Postman)  
-В Postman на адрес ``` http://localhost:8888/oauth/token ``` отправить POST запрос с аторизацией basic auth (username "landesk", password "secret") и телом x-www-form-urlencoded со следующими данными:  
+В Postman на адрес ``` http://localhost:8888/oauth/token ``` отправить POST запрос с авторизацией basic auth (username "landesk", password "secret") и телом x-www-form-urlencoded со следующими данными:  
 grant_type: password  
 username: выбрать из списка ниже  
 password: pass123  

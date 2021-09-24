@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  activemq:
+    image: rmohr/activemq:5.10.0
+    container_name: activemqcontainer
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+
+  landesk-app:
+    image: landesk-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: landesk
+    depends_on:
+      - activemq
+    ports:
+      - "8888:8888"
+
+
+
